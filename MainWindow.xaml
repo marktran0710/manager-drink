@@ -8,7 +8,7 @@
         mc:Ignorable="d"
 		
         DataContext="{StaticResource MainVM}"
-        Title="MainWindow" Height="450" Width="800"
+        Title="MainWindow" Height="500" Width="800"
         Name="mainWindown"
         WindowStyle="None"
         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
@@ -308,13 +308,13 @@
                                 <ColumnDefinition Width="auto"></ColumnDefinition>
                                 <ColumnDefinition Width="auto"></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <Grid Grid.Row="0">
+                            <Grid Grid.Column="0">
                                 <DatePicker VerticalAlignment="Center" HorizontalAlignment="Left" Width="100" materialDesign:HintAssist.Hint="Ngày bắt đầu" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
                             </Grid>
-                            <Grid Grid.Row="1">
+                            <Grid Grid.Column="1">
                                 <DatePicker VerticalAlignment="Center" HorizontalAlignment="Left" Width="100" materialDesign:HintAssist.Hint="Ngày kết thúc" Style="{StaticResource MaterialDesignFloatingHintDatePicker}" />
                             </Grid>
-                            <Grid Grid.Row="2">
+                            <Grid Grid.Column="2">
                                 <Button Style="{StaticResource MaterialDesignRaisedButton}" Margin="5" Width="100" Content="Lọc" ToolTip="Resource name: MaterialDesignRaisedButton"></Button>
                             </Grid>
                         </Grid>
